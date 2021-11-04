@@ -1,0 +1,177 @@
+/*Titulo De La Pagina*/
+
+.cover {
+    height: 400px;
+    background-image: url(/Img/portada.jpg);
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position-x: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+    font-family: 'Suez One', serif;
+    background-attachment:fixed;/*SSS*/
+}
+.cover-small{
+    background-attachment:scroll;
+}
+.titulo {
+    color: #ce1736;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*Tarjetas*/
+
+.card {
+    border: i!important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4 px -1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid rgba(216, 3, 152, 0.7);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+.pb-2{
+    color: #fff;
+}
+/*CODIGO DE PRUEBA*/
+/* Galeria */
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(216, 3, 152, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/*Compra*/
+.stripe-container, .slider-container{
+    display: flex;
+    cursor: pointer;
+}
+
+
+.stripe-container .card{
+   width: 300px;
+   flex-shrink: 0;
+   margin-right: 3rem;
+}
+.produc-stripe, .slider{
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/**/
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 999999;
+    cursor: pointer;
+    display:none;
+}
+.modal #imgModal{
+    width: 75%;
+    margin:50px auto;
+    height: 75%;
+    display: block;
+    object-fit: cover;
+    cursor: auto;
+}
+.modal #caption{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: auto;
+    text-transform: uppercase;
+}
+.modal #closeModal{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color:#fff;
+    font-size: 30px;
+    transition: 200ms;
+}
